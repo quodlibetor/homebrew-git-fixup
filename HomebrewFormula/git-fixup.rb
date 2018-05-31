@@ -5,7 +5,9 @@ class GitFixup < Formula
 
   if OS.mac?
       depends_on "openssl"
-      url "https://github.com/quodlibetor/git-fixup/releases/download/v#{version}/git-fixup-#{version}-x86_64-apple-darwin.tar.gz"
+      depends_on "libssh2"
+      url "https://github.com/quodlibetor/git-fixup/releases/download/v#{version}/git-fixup-#{versi
+on}-x86_64-apple-darwin.tar.gz"
       sha256 "1a632b8eb5db49991dc1e7fb77c608dfdbd0ccbe1314ae56b617e766a63d9a9c"
   elsif OS.linux?
       url "https://github.com/quodlibetor/git-fixup/releases/download/v#{version}/git-fixup-#{version}-x86_64-unknown-linux-musl.tar.gz"

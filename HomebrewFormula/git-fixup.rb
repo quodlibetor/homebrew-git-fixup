@@ -13,5 +13,6 @@ class GitFixup < Formula
 
   def install
     bin.install "git-fixup"
+    File.symlink bin / "git-fixup", bin / "git-squash"
   end
 end

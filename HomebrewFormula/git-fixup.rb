@@ -1,5 +1,5 @@
 class GitFixup < Formula
-  version "0.1.4"
+  version "0.1.5"
   desc "Fixup old git commits"
   homepage "https://github.com/quodlibetor/git-fixup"
 
@@ -7,10 +7,10 @@ class GitFixup < Formula
       depends_on "openssl"
       depends_on "libssh2"
       url "https://github.com/quodlibetor/git-fixup/releases/download/v#{version}/git-fixup-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "95587cc3a2b51063e2d6cb9b6a3cb9b5a1e1e17ea77db7d1b31d7e0f4fd722b1"
+      sha256 "b346aca1bfef57c992a1995af413bd7c52aeef36fb7d57972f9500488cf5cb8f"
   elsif OS.linux?
       url "https://github.com/quodlibetor/git-fixup/releases/download/v#{version}/git-fixup-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c51d1d832c208bd375bfd2575a6eaea15b5e620d12718baab793db1552f6eedb"
+      sha256 "48430a02558562540eb2ba45b2038a9de7fee63ea743340dd9c56d489fcaf61e"
   end
 
   def install

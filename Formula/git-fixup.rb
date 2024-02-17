@@ -19,7 +19,7 @@ class GitFixup < Formula
     end
   end
 
-  deprecate! date: "2024-02-17", because: "Renamed to git-instafix. Install quodlibetor/git-tools/git-instafix instead"
+  deprecate! date: "2024-02-16", because: "Renamed to git-instafix. Install quodlibetor/git-tools/git-instafix instead"
 
   def install
     on_macos do
